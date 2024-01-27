@@ -23,7 +23,6 @@ header {
 }
 
 header>nav {
-    border: rgb(255, 5, 205) 1px solid;
     float: right;
     width: 40%;
     height: 100%;
@@ -31,7 +30,6 @@ header>nav {
 }
 
 header>nav>ul {
-    border: rgb(5, 255, 101) 1px solid;
     height: 100%;
     width: 100%;
     float: right;
@@ -46,7 +44,6 @@ a {
 }
 
 .itemnav {
-    border: rgb(5, 255, 101) 1px solid;
     height: 100%;
     width: 20%;
     display: inline-block;
@@ -84,12 +81,12 @@ a {
 
 .imgUno {
     width: 100%;
+    width: 100%;
     height: 100%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 
 .imgDos {
-    border: red 1px solid;
     width: 100%;
     height: 100%;
     padding-bottom: 5%;
@@ -118,40 +115,40 @@ a {
 }
 
 .separadorCarta {
-    border: rgba(98, 0, 255, 0.731) 1px solid;
     width: 75%;
-    margin-top: 2%;
+    margin-top: 1%;
+}
+
+.separadorCarta>h1 {
+    width: 100%;
+    font-size: 25px;
 }
 
 .carta {
-    border: red 1px solid;
     width: 75%;
+    margin-top: 1%;
+}
+
+.carta2 {
+    width: 100%;
     margin-top: 1%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 16.4% 40% 40%;
+    grid-template-columns: 16% 40% 40%;
     column-gap: 2%;
-    border: yellow 1px solid;
-    padding: 1px;
-}
-
-.grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px 0;
-    font-size: 30px;
+    row-gap: 0.7%;
 }
 
 .item1 {
     grid-column: 1 / span 3;
     grid-row: 1;
     text-align: center;
-    
+
 }
 
-.item1 > h1{
-    border: yellow 2px solid;
+.item1>h1 {
     background-color: rgba(0, 0, 78, 0.993);
     padding: 1.5%;
     color: white;
@@ -162,24 +159,86 @@ a {
     grid-row: 2 / span 2;
     text-align: center;
     border: rgb(3, 63, 35) 2px solid;
-
+    height: 98%;
 }
 
-.item2 > h1{
-    padding-top: 60%;
+.item2>h1 {
+    padding-top: 70%;
 }
 
 .item3 {
     grid-column: 2 / span 2;
     grid-row: 2;
-    
+}
+
+.item5 {
+    height: 83%;
 }
 
 .imgMenu {
-    width: 60%;
-    padding-left: 20%;
+    width: 100%;
+
 }
 
 .texCarta {
-    padding-right: 2%;
+    padding-bottom: 1%;
+}
+
+.separadorCarta2 {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.separadorCarta2>h1 {
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.boton {
+    flex: 1 0 calc(25% - 10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.boton img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.boton:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    
 }
