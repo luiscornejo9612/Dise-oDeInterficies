@@ -63,10 +63,19 @@ a {
 
 .imagenBaner>div {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 15%;
+    padding-top: 15%;
+    padding-bottom: 15%;
     height: 100%;
     width: 100%;
     /* Ajusta el ancho máximo del div hijo según tus necesidades */
+}
+
+.imagenBaner>div>h1 {
+    padding-left: 12%;
+}
+
+.imagenBaner>div>p {
+    padding-left: 12%;
 }
 
 .bloqueDos {
