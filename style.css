@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 body {
@@ -16,22 +16,22 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 6%;
     background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
 }
 
 header>nav {
     float: right;
-    width: 40%;
+    width: 55%;
     height: 100%;
     list-style: none;
 }
 
 header>nav>ul {
     height: 100%;
-    width: 100%;
+    width: 50%;
     float: right;
 
 }
@@ -46,11 +46,10 @@ a {
 .itemnav {
     height: 100%;
     width: 20%;
+    padding-top: 4%;
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    float: right;
-
 }
 
 .imagenBaner {
@@ -58,6 +57,7 @@ a {
     background-size: cover;
     height: 100%;
     width: 100%;
+    margin-top: 2%;
     color: white;
 }
 
@@ -79,7 +79,7 @@ a {
 }
 
 .bloqueDos {
-    width: 75%;
+    width: 85%;
     height: 90%;
     margin-top: 5%;
 }
@@ -89,7 +89,6 @@ a {
 }
 
 .imgUno {
-    width: 100%;
     width: 100%;
     height: 100%;
     padding-bottom: 5%;
@@ -124,7 +123,7 @@ a {
 }
 
 .separadorCarta {
-    width: 75%;
+    width: 85%;
     margin-top: 1%;
 }
 
@@ -134,7 +133,7 @@ a {
 }
 
 .carta {
-    width: 75%;
+    width: 85%;
     margin-top: 1%;
 }
 
@@ -214,7 +213,6 @@ a {
 
 .boton {
     flex: 1 0 calc(25% - 10px);
-    position: relative;
     overflow: hidden;
 }
 
@@ -236,7 +234,7 @@ footer {
     width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
-    
+
 
 }
 
@@ -249,5 +247,203 @@ footer div {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+
+
+
+/* Estilos para pantallas con un ancho máximo de 800px */
+@media(max-width: 800px) {
+
+    header>nav {
+        float: right;
+        width: 70%;
+        height: 100%;
+        list-style: none;
+    }
+
+    header>nav>ul {
+        height: 100%;
+        width: 98%;
+        float: right;
+
+    }
+
+    .itemnav {
+        height: 100%;
+        width: 20%;
+        padding-top: 2%;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .imagenBaner {
+        height: 100%;
+        margin-top: 4%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+    }
+
+    .imgUno img,
+    .imgDos img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Definir dos columnas donde la primera tenga un tamaño relativo de 1 parte y la segunda 2 partes */
+        grid-gap: 10px; /* Espacio entre los elementos */
+    }
     
+    .item4 {
+        grid-column: 2; /* Colocar item4 en la primera columna */
+    }
+    
+    .item5 {
+        grid-column: 2; /* Colocar item5 en la segunda columna */
+    }
+    
+    .item2 {
+        grid-column: 1;
+        grid-row: 2 / span 3;
+        text-align: center;
+        border: rgb(3, 63, 35) 2px solid;
+        height: 100%;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño de las columnas automáticamente */
+        gap: 10px; /* Espacio entre elementos */
+      }
+      
+
+    .boton {
+        flex: 1 0 calc(50% - 5px);
+        /* Cambia el tamaño de los botones */
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/* Estilos para pantallas con un ancho máximo de 600px */
+@media(max-width: 600px) {
+
+    
+
+    header>nav {
+        float: right;
+        width: 70%;
+        height: 100%;
+        list-style: none;
+    }
+
+    header>nav>ul {
+        height: 100%;
+        width: 98%;
+        float: right;
+
+    }
+
+
+    .itemnav {
+        height: 100%;
+        width: 20%;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .imagenBaner {
+        height: 100%;
+        margin-top: 8%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+    }
+
+    .imagenBaner>div {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .separadorCarta {
+        margin-left: 15%;
+
+    }
+
+    .bloqueDos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgUno img,
+    .imgDos img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .separadorCarta,
+    .separadorCarta2 {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    
+
+    .item1 {
+        grid-row: 1; /* Colocar item4 en la primera fila */
+        grid-column: 1 / span 5;
+
+    }
+
+    .item2 {
+        grid-row: 2; /* Colocar item4 en la primera fila */
+        grid-column: 1 / span 5;
+
+    }
+    .item2>h1{
+        padding-top: 5%;
+    }
+
+    .item3 {
+        grid-row: 3; /* Colocar item4 en la primera fila */
+        grid-column: 1 / span 3;
+
+    }
+    .item4 {
+        grid-row: 4; /* Colocar item4 en la primera fila */
+        grid-column: 1 / span 5;
+    }
+    .item5 {
+        grid-row: 5; /* Colocar item4 en la primera fila */
+        grid-column: 1 / span 5;
+    }
+    
+
+    .contenedor {
+        gap: 5px;
+        flex-direction: column;
+        /* Ajusta el espacio entre elementos */
+    }
+
+    .boton {
+        flex: 1 0 calc(50% - 5px);
+        /* Cambia el tamaño de los botones */
+    }
 }
